@@ -1,0 +1,49 @@
+<div class="accordian">
+  <div class="items">
+    <div class="accordian-title" (click)="display(a1)" #a1>
+      Is Bootstrap a programming language?<i
+        class="fas fa-angle-down"
+        [class.active]="id == a1 && value == true"
+      ></i>
+    </div>
+    <div class="accordian-data" *ngIf="id == a1 && value == true">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        praesentium est doloribus officia maxime magni vero velit et deserunt,
+        sequi distinctio illo eos fugit eligendi asperiores nihil alias
+        dignissimos tempore aspernatur similique aut facilis fuga! Ex facere,
+        odit odio facilis reiciendis officia nobis consequatur totam,
+        repellendus commodi in, sed fugiat consectetur porro dignissimos ipsa.
+        Sapiente pariatur et tempore sint veritatis nulla sit dolores culpa
+        inventore minima. Soluta labore tenetur inventore dolore velit,
+        provident dicta quod quo eaque culpa? Aliquam aut autem ut ipsam porro
+        sunt, a cupiditate doloremque magnam nemo earum illum sit neque
+        perspiciatis consequatur facere, culpa explicabo itaque!
+      </p>
+    </div>
+  </div>
+  <div class="items">
+    <div class="accordian-title" (click)="display(a2)" #a2>
+      Is it good to use Bootstrap?
+      <i
+        class="fas fa-angle-down"
+        [class.active]="id == a2 && value == true"
+      ></i>
+    </div>
+    <div class="accordian-data" *ngIf="id == a2 && value == true">
+      <p>
+        Is it good to use Bootstrap? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consequuntur praesentium est doloribus officia maxime
+        magni vero velit et deserunt, sequi distinctio illo eos fugit eligendi
+        asperiores nihil alias dignissimos tempore aspernatur similique aut
+        facilis fuga! Ex facere, odit odio facilis reiciendis officia nobis
+        consequatur totam, repellendus commodi in, sed fugiat consectetur porro
+        dignissimos ipsa. Sapiente pariatur et tempore sint veritatis nulla sit
+        dolores culpa inventore minima. Soluta labore tenetur inventore dolore
+        velit, provident dicta quod quo eaque culpa? Aliquam aut autem ut ipsam
+        porro sunt, a cupiditate doloremque magnam nemo earum illum sit neque
+        perspiciatis consequatur facere, culpa explicabo itaque!
+      </p>
+    </div>
+  </div>
+</div>
